@@ -3,12 +3,13 @@
 
 import json
 import requests
+import config
 
 querystring = {"homeCountry":"US","purchaseCountry":"US","currentCountry":"US"}
 url = "https://imdb8.p.rapidapi.com/title/get-most-popular-movies"
 
 headers = {
-	"X-RapidAPI-Key": "<YOUR-API-KEY-HERE>",
+	"X-RapidAPI-Key": config.api_key,
 	"X-RapidAPI-Host": "imdb8.p.rapidapi.com"
 }
 
